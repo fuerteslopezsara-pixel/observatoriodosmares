@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Observatorio Dos Mares</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --odm-granate:#7A1F2B;
+      --odm-azul:#1E3A8A; /* azul marino */
+      --odm-azul-claro:#3B82F6; /* azul cielo */
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-xl font-bold text-[var(--odm-granate)]">Observatorio Dos Mares</h1>
+      <a href="#participa" class="text-sm font-semibold rounded-lg bg-[var(--odm-granate)] px-3 py-2 text-white hover:opacity-90">Participa</a>
+    </div>
+  </header>
+
+  <!-- HERO (sin foto, con azul mar) -->
+  <section class="relative">
+    <div class="h-64 bg-gradient-to-r from-[var(--odm-azul)] to-[var(--odm-azul-claro)] flex items-center justify-center">
+      <h2 class="text-2xl md:text-4xl font-bold text-white text-center px-4">
+        Visibilizando los problemas del litoral entre dos mares
+      </h2>
+    </div>
+  </section>
+
+  <!-- PROPÓSITO -->
+  <section class="max-w-3xl mx-auto px-4 py-12 text-center">
+    <p class="text-lg leading-relaxed">
+      Este proyecto ciudadano recoge <strong>incidencias, sugerencias y reclamaciones</strong> de la zona del Mar Menor, La Manga y Cabo de Palos.  
+      Nuestro objetivo es visibilizar la falta de inversión y la deficiente prestación de servicios por parte de los ayuntamientos competentes.  
+      Si la plataforma gana uso y apoyo vecinal, elaboraremos <strong>reportes periódicos</strong> dirigidos a los responsables de cada área municipal.
+    </p>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="participa" class="max-w-3xl mx-auto px-4 pb-12">
+    <h3 class="text-xl font-bold text-[var(--odm-granate)] text-center mb-4">Participa con tu aportación</h3>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdSiCs0IimrdpFUWlnuta_G6IwtaYqRD5hAnhw23szQssoxQ/viewform?embedded=true" 
+            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+      Cargando…
+    </iframe>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
+    Escríbenos: <a href="mailto:fuerteslopezsara@gmail.com" class="underline">fuerteslopezsara@gmail.com</a><br>
+    © <span id="year"></span> Observatorio Dos Mares
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
